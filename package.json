@@ -1,0 +1,26 @@
+{
+  "name": "agentfx",
+  "version": "0.1.0",
+  "description": "AgentFX — micropayment FX & crypto rate agent with price alerts (x402 / USDC on Base)",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "check": "node --check src/index.js && node --check src/middleware/x402.js && node --check src/services/fx.js && node --check src/services/cryptoPrices.js && node --check src/services/alerts.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "x402",
+    "crypto",
+    "fx",
+    "rates",
+    "alerts",
+    "agent"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
